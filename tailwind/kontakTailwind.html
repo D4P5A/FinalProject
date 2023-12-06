@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak</title>
+    <link style="height: 30px; width: 30px;" rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css"  rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        .footer {
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 20px 0;
+    text-align: center;
+}
+
+
+.footer p {
+    color: #a0a0a0; 
+    transition: color 0.3s ease-in-out;
+}
+
+.footer p:hover {
+    color: #ffffff; 
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 5px;
+    border: 2px solid #a0a0a0;
+    border-radius: 50%; 
+    overflow: hidden;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.social-icons img {
+    width: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+    border-color: #000000; 
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}
+@keyframes backgroundAnimation {
+        0% { background-color: #38de0f; }
+        20% { background-color: #240fde; } 
+        50% { background-color: #fff200; } 
+        100% { background-color: #db32e0; } 
+    }
+    
+    body {
+        animation: backgroundAnimation 5s infinite; 
+    }
+
+    .video-container {
+            margin-bottom: 20px; /* Optional: Add margin between videos */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        
+
+        <nav class="bg-white border-gray-200 dark:bg-gray-900">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+             
+                  <img src="logo.png" class="h-8" alt="Flowbite Logo" />
+                  
+              <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+                  <span class="sr-only">Open main menu</span>
+                  <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                  </svg>
+              </button>
+              <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                  <li>
+                    <a href="index.html" class="block py-2 px-3 text-gray-900 bg-white-700 rounded md:bg-transparent md:text-gray-700 md:p-0 md:hover:text-blue-900 dark:text-white md:dark:text-blue-500" aria-current="page">Home</a>
+                  </li>
+                  <li>
+                    <a href="BiodataTailwind.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-900 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Biodata</a>
+                  </li>
+                  <li>
+                    <a href="kontakTailwind.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-900 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Kontak</a>
+                  </li>
+                  <li>
+                    <a href="wants.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-900 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Keinginan</a>
+                  </li>
+                  <li>
+                    <a href="https://fti.unai.edu/" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-900 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">FTI UNAI</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          
+            </header>
+
+            <main>
+                <div class="bg-gray-200 p-6">
+                    <div class="max-w-md mx-auto bg-white rounded-md overflow-hidden">
+                      <div class="p-4">
+                        <h1 class="text-2xl font-bold mb-4">Formulir Kontak</h1>
+                        <form onsubmit="return validateForm()">
+                          <div class="mb-4">
+                            <label for="nama" class="block text-sm font-semibold mb-2">Nama Lengkap</label>
+                            <input type="text" id="nama" name="nama" class="w-full p-2 border rounded-md" >
+                          </div>
+                  
+                          <div class="mb-4">
+                            <label for="username" class="block text-sm font-semibold mb-2">User Name</label>
+                            <input type="text" id="username" name="username" class="w-full p-2 border rounded-md" >
+                          </div>
+                  
+                          <div class="mb-4">
+                            <label for="email" class="block text-sm font-semibold mb-2">Email</label>
+                            <input type="email" id="email" name="email" class="w-full p-2 border rounded-md" >
+                          </div>
+                  
+                          <div class="mb-4">
+                            <label for="password" class="block text-sm font-semibold mb-2">Password</label>
+                            <input type="password" id="password" name="password" class="w-full p-2 border rounded-md" >
+                          </div>
+                  
+                          <div class="mb-4">
+                            <label class="block text-sm font-semibold mb-2">Jenis Kelamin</label>
+                            <div>
+                              <label class="inline-flex items-center">
+                                <input type="radio" name="gender" value="male" class="form-radio" >
+                                <span class="ml-2">Laki-laki</span>
+                              </label>
+                              <label class="inline-flex items-center ml-6">
+                                <input type="radio" name="gender" value="female" class="form-radio">
+                                <span class="ml-2">Perempuan</span>
+                              </label>
+                            </div>
+                          </div>
+                  
+                          <div class="mb-4">
+                            <label for="gama" class="block text-sm font-semibold mb-2">Pilihan Agama</label>
+                            <select id="gama" name="gama" class="w-full p-2 border rounded-md" >
+                              <option value="" disabled selected>Pilih Agama</option>
+                              <option value="islam">Islam</option>
+                              <option value="kristen">Kristen</option>
+                              <option value="hindu">Hindu</option>
+                              <option value="budha">Budha</option>
+                            </select>
+                          </div>
+                  
+                          <div class="mb-4">
+                            <label for="hobi" class="block text-sm font-semibold mb-2">Tentara untuk Deskripsi Diri</label>
+                            <textarea id="hobi" name="hobi" rows="4" class="w-full p-2 border rounded-md" ></textarea>
+                          </div>
+                  
+                          <button type="submit" class="bg-blue-500 text-white p-2 rounded-md">Kirim</button>
+                        </form>
+                      </div>
+                    </div>
+                    </div>
+
+
+                    <script>
+                        function validateForm() {
+                            var nama = document.getElementById("nama").value;
+                            var email = document.getElementById("email").value;
+                            var username = document.getElementById("username").value;
+                            var password = document.getElementById("password").value;
+                            var gender = document.querySelector('input[name="gender"]:checked');
+                            var gama = document.getElementById("gama").value;
+                            var hobi = document.getElementById("hobi").value;
+                
+                            var errorMessages = [];
+                
+                            if (nama === "") {
+                                errorMessages.push("Nama Lengkap");
+                            }
+                            if (email === "") {
+                                errorMessages.push("Email");
+                            }
+                            if (username === "") {
+                                errorMessages.push("Username");
+                            }
+                            if (password === "") { 
+                                errorMessages.push("Kata Sandi");
+                            }
+                            if (!gender) {
+                                errorMessages.push("Gender");
+                            }
+                            if (gama === "") {
+                                errorMessages.push("Pilihan Gama");
+                            }
+                            if (hobi === "") {
+                                errorMessages.push("Deskiripsi");
+                            }
+                
+                            if (errorMessages.length > 0) {
+                                alert("Harap isi field berikut:\n" + errorMessages.join("\n"));
+                                return false;
+                            }
+                
+                            alert("Formulir berhasil diisi!");
+                            return true;
+                        }
+                    
+                    </script>
+                  
+            </main>
+
+
+            <footer class="bg-blue-800">
+                <div class="container mx-auto py-6 text-center text-white">
+                    <p class="uppercase text-xs font-bold tracking-wider mb-2">&copy;PT Astra International Tbk 2023.</p>
+                    <p class="text-xs">Kebijakan Privasi dan Ketentuan Layanan</p>
+                    <div class="flex justify-center mt-4">
+                        <a href="#" target="_blank" class="inline-block mx-2 border-2 border-blue-500 rounded-full overflow-hidden transition-transform transform hover:scale-125">
+                            <img src="facebook.png" alt="Facebook" class="w-6 h-6">
+                        </a>
+                        <a href="#" target="_blank" class="inline-block mx-2 border-2 border-blue-500 rounded-full overflow-hidden transition-transform transform hover:scale-125">
+                            <img src="twitter.png" alt="Twitter" class="w-6 h-6">
+                        </a>
+                        <a href="#" target="_blank" class="inline-block mx-2 border-2 border-blue-500 rounded-full overflow-hidden transition-transform transform hover:scale-125">
+                            <img src="instagram.png" alt="Instagram" class="w-6 h-6">
+                        </a>
+                        <a href="#" target="_blank" class="inline-block mx-2 border-2 border-blue-500 rounded-full overflow-hidden transition-transform transform hover:scale-125">
+                            <img src="linkedin.png" alt="LinkedIn" class="w-6 h-6">
+                        </a>
+                    </div>
+                </div>
+            </footer>
+            
+    
+</body>
+</html>

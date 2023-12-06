@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astra International</title>
+    <!-- Ikon Favicon -->
+    <link rel="shortcut icon" href="favicon_astra_1.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="final.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="https://www.astra.co.id/">
+                    <img src="logo.png" alt="logo-astra" width="70" height="20" class="d-inline-block align-top">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Beranda</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="biodataboostrap.html">Biodata</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="kontakboostrap.html">Kontak</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="lainnyaboostrap.html">Keinginan</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a  class="nav-link" href="https://r.search.yahoo.com/_ylt=AwrjfDgnDWxlJlQjJbtXNyoA;_ylu=Y29sbwNncTEEcG9zAzEEdnRpZAMEc2VjA3Ny/RV=2/RE=1701608872/RO=10/RU=https%3a%2f%2ffti.unai.edu%2f/RK=2/RS=dEw37oJiovAGhEEQEunYVEXwsUk-">FTI UNAI</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a style="" class="nav-link" href="https://r.search.yahoo.com/_ylt=AwrjW7w6DWxlT94jk1NXNyoA;_ylu=Y29sbwNncTEEcG9zAzEEdnRpZAMEc2VjA3Ny/RV=2/RE=1701608890/RO=10/RU=https%3a%2f%2fonline.unai.edu%2f/RK=2/RS=ChSe7FNIpbfqpLr.7nWjhDBGNgE-">UNAI</a>
+                        </li>
+                        
+
+                    </ul>
+                    <div class="search">
+                        <input type="text" placeholder="Cari">
+                        <button class="btn btn-outline-primary " type="submit"><img src="search-icon.png" alt="" width="30" height="30" style="border-radius: 30px;"></button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                        <img src="barner-1.png" class="d-block w-100" alt="Gambar 1">  
+                </div>
+                <div class="carousel-item">
+                        <img src="barner-2.png" class="d-block w-100" alt="Gambar 2">
+                </div>
+                <div class="carousel-item active">
+                        <img src="barner-3.png" class="d-block w-100" alt="Gambar 3">  
+                </div>
+                <!--penambahan crousel -->>
+            </div>
+        </div>
+        
+        <div id="textCarousel" class="carousel slide txt-slide" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-inner text-primary ">
+                <div class="carousel-item active">
+                    <h2 class="text-left fw-bold">
+                        Cita-cita Astra adalah untuk membangun sebuah bisnis yang lebih sustainable, yang dapat berkontribusi dalam memperkuat pertumbuhan dan ketahanan ekonomi Indonesia serta mendukung kesejahteraan sosial masyarakat yang inklusif.
+                    </h2>
+                </div>
+                <div class="carousel-item">
+                    <h2 class="text-left fw-bold">
+                        Astra meningkatkan langkah perjalanan sustainability, yang memadukan fokus kami pada masyarakat dengan fokus pada iklim dan planet.
+                    </h2>
+                </div>
+                <div class="carousel-item">
+                    <h2 class="text-left fw-bold">
+                        Astra meningkatkan langkah perjalanan sustainability, yang memadukan fokus kami pada masyarakat dengan fokus pada iklim dan planet.
+                    </h2>
+                </div>
+                
+            </div>
+        </div>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+               
+                var imageCarousel = new bootstrap.Carousel(document.getElementById('imageCarousel'));
+                imageCarousel.ride('cycle');
+                imageCarousel.pause();
+    
+                
+                var textCarousel = new bootstrap.Carousel(document.getElementById('textCarousel'));
+                textCarousel.ride('cycle');
+                textCarousel.pause();
+    
+                
+                imageCarousel.on('slide.bs.carousel', function (event) {
+                    var index = event.to;
+                    textCarousel.to(index); 
+                });
+            });
+           
+        </script>
+
+
+          <div class="video">
+            <video id="respon-video" poster="vidio gambar.png" controls="">
+            <source src="https://drive.google.com/uc?export=download&amp;id=1xWu50Bmhkn8hk7aXZqoSML0CPl_jhJFo" type="video/mp4">
+        </video>
+        </div>
+
+    <div class="bisnis-section">
+        <div class="text-center text-white bisnis-awal">
+            <h2><strong >BISNIS</strong></h2>
+            <div class="bisnis-p">
+            <p class=" text-white ">Astra saat ini memiliki 197.447 karyawan pada 270 anak perusahaan, perusahaan asosiasi dan pengendalian bersama entitas yang menjalankan tujuh segmen usaha di Indonesia</p>
+            </div>
+        </div>
+
+        <div class="container mt-5">
+            <div class="row img-container">
+                <div class="col-12 col-md-4 mb-4 text-center">
+
+                    <a href="#" class="text-white fs-4 text fw-bold">
+                        <img src="otomotif.png" alt="" class="img-fluid rounded">
+                        otomotif
+                    </a>
+                </div>
+    
+               
+                <div class="col-12 col-md-4 mb-4 text-center">
+                    <a href="#" class="text-white fs-4 text fw-bold">
+                        <img src="jasa.png" alt="" class="img-fluid rounded">
+                         keuangan dan jasa
+                    </a>
+                </div>
+    
+                <div class="col-12 col-md-4 mb-4 text-center">
+                   <a href="#" class="text-white fs-4 text fw-bold">
+                        <img src="panel.png" alt="" class="img-fluid rounded">
+                         Konstruksi Dan energi
+                    </a>
+                </div>
+    
+                <div class="col-12 col-md-4 mb-4 text-center">
+                    <a href="#" class="text-white fs-4 text fw-bold">
+                        <img src="pekerja.png" alt="" class="img-fluid rounded">
+                        Agribisnis
+                    </a>
+                </div>
+    
+                <div class="col-12 col-md-4 mb-4 text-center">
+                    <a href="#" class="text-white fs-4 text fw-bold">
+                        <img src="kerja.png" alt="" class="img-fluid rounded">
+                        Infrastruktur dan Logistik
+                    </a>
+                </div>
+    
+                <div class="col-12 col-md-4 mb-4 text-center">
+                    <a href="#" class="text-white fs-4 text fw-bold">
+                        <img src="teknologiinformasi.jpg" alt="" class="img-fluid rounded">
+                        Teknologi Informasi
+                    </a>
+                </div>
+    
+                
+                <div class="row justify-content-center img-container pt-4">
+                    <div class="col-12 col-md-4 mb-4 text-center">
+                        <a href="#" class="text-white fs-4 text fw-bold">
+                            <img src="gedung astra.png" alt="" class="img-fluid rounded">
+                            Properti
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        </div>
+    
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        
+        <div  id="additionalImageCarousel" class="carousel slide mt-5 crausel-bawah" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-inner ">
+                <div class="carousel-item active imgbawah">
+                    <img src="satu-indonesia.png" class="d-block w-100" alt="Image 1">
+                </div>
+                <div class="carousel-item imgbawah">
+                    <img src="astramoment.png" class="d-block w-100" alt="Image 2">
+                </div>
+                <div class="carousel-item imgbawah">
+                    <img src="Astrahadiah.png" class="d-block w-100" alt="Image 3">
+                </div>             
+            </div>
+        </div>
+
+
+        <div class="text-center text-primary text-bold mt-4 ">
+            <h3 class="fs-4 ">KOMUNITAS ASTRA</h3>
+        </div>
+        <div class="row justify-content-center mt-5 " style="width: auto;">
+            <div class="display-flex">
+                <div class="image-container">
+                    <a href="#" class="text-decoration-none text-dark">
+                    <img src="indonesiahover.png " alt="">
+                    <h4>Indonesia</h4>
+                    </a>
+                </div>
+                <div class="image-container ">
+                    <a href="#" class="text-decoration-none text-dark">
+                    <img src="karier.png" alt="">
+                        <h4>karrier</h4>
+                        </a>
+                    </div>
+                
+                <div class="image-container ">
+                    <a class="text-decoration-none text-dark" href="#">
+                    <img src="blog.png" alt="">
+                     <h4>Blog</h4>
+                     </a>
+                </div>
+            </div>
+         </div>
+        
+         <div style="background-color: rgb(199, 199, 255); height: 400px;"  class="mt-5">
+            <div class="text-primary text-center endhome" >
+                <p>Dapatkan Informasi Perkembangan Terkini Dari PT Astra International Tbk</p>
+            </div>
+            
+            <div class="container mt-4">
+                <form class="form-inline justify-content-center">
+                    <div class="form-group mb-2 mr-2">
+                        <label for="inputEmail" class="sr-only"></label>
+                        <div class="input-group">
+                            <input type="email" id="inputEmail" class="form-control custom-input" placeholder="Email" aria-label="Email" aria-describedby="basic-addon2">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary ">Daftar</button>
+                </form>
+            </div>
+
+            
+    </main>
+
+
+    <footer>
+         <div style="background-color: rgb(36, 36, 134); " class="">
+               <div class="footer">
+        <p>&copy;PT Astra International Tbk 2023.</p>
+        <p>Kebijakan Privasi dan ketentuan layanan</p>
+        <div class="social-icons">
+            <a href="#" target="_blank"><img src="facebook.png" alt="Facebook"></a>
+            <a href="#" target="_blank"><img src="twitter.png" alt="Twitter"></a>
+            <a href="#" target="_blank"><img src="instagram.png" alt="Instagram"></a>
+            <a href="#" target="_blank"><img src="linkedin.png" alt="Instagram"></a>
+     </div>
+    </div>
+    </div>
+    </footer>
+
+    
+</body>
+</html>
